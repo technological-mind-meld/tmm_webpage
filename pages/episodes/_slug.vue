@@ -1,5 +1,7 @@
 <template>
   <div>
+    <SocialHead :title="episode.title" :description="episode.description" type="video.episode" />
+
     <h1>{{ episode.title }}</h1>
     <p>{{ episode.description }}</p>
 
@@ -27,6 +29,11 @@ export default {
   data () {
     return {
       episode: null
+    }
+  },
+  head () {
+    return {
+      title: this.episode.title
     }
   }
 }
