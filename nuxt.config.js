@@ -1,3 +1,5 @@
+import { getEpisodeRoutes } from './utils/episode'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -14,6 +16,12 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  },
+
+  // https://nuxtjs.org/docs/configuration-glossary/configuration-generate/
+  generate: {
+    routes: getEpisodeRoutes,
+    fallback: 'error.html'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -40,7 +48,13 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    // Sitemap module configuration (https://sitemap.nuxtjs.org/guide/setup)
+    ['@nuxtjs/sitemap', {
+      path: '/sitemap.xml',
+      hostname: process.env.BASE_URL || 'https://podcast.0x4447.com',
+      gzip: true
+    }]
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
