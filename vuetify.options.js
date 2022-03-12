@@ -6,5 +6,8 @@ export default {
         primary: '#0286ee'
       }
     }
+  },
+  icons: {
+    iconfont: 'mdiSvg'
   }
 }

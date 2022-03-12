@@ -13,6 +13,7 @@
     "lintfix": "yarn lint:js --fix && yarn lint:style --fix"
   },
   "dependencies": {
+    "@mdi/js": "^6.5.95",
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/pwa": "^3.3.5",
