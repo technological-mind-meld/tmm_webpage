@@ -1,3 +1,4 @@
+import { feed as feedConfig } from './nuxt-config/feed'
 import { getEpisodeRoutes } from './utils/episode'
 
 export default {
@@ -45,6 +46,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // Feed module
+    ['@nuxtjs/feed'],
     // https://go.nuxtjs.dev/pwa
     ['@nuxtjs/pwa', {
       icon: {
@@ -70,6 +73,9 @@ export default {
       Sitemap: 'https://podcast.0x4447.com/sitemap.xml'
     }]
   ],
+
+  // Feed module configuration (https://github.com/nuxt-community/feed-module#setup)
+  feed: feedConfig,
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
