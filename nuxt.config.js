@@ -1,6 +1,7 @@
 import { feed as feedConfig } from './nuxt-config/feed'
 import { head as headConfig } from './nuxt-config/head'
 import { getEpisodeRoutes } from './utils/episode'
+import { BASE_URL } from './utils/constants/app-constants'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -51,7 +52,7 @@ export default {
     // Sitemap module configuration (https://sitemap.nuxtjs.org/guide/setup)
     ['@nuxtjs/sitemap', {
       path: '/sitemap.xml',
-      hostname: process.env.BASE_URL || 'https://podcast.0x4447.com',
+      hostname: BASE_URL,
       gzip: true
     }],
     // Robots module configuration (https://www.npmjs.com/package/@nuxtjs/robots#setup)
@@ -60,9 +61,14 @@ export default {
       Allow: '/',
       Disallow: '/_nuxt/',
       CrawlDelay: 5,
-      Sitemap: 'https://podcast.0x4447.com/sitemap.xml'
+      Sitemap: `${BASE_URL}/sitemap.xml`
     }]
   ],
+
+  // Router configuration (https://nuxtjs.org/docs/configuration-glossary/configuration-router)
+  router: {
+    trailingSlash: true
+  },
 
   // Feed module configuration (https://github.com/nuxt-community/feed-module#setup)
   feed: feedConfig,
