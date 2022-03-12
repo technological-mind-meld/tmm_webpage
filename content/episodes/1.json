@@ -20,7 +20,7 @@
   "hosts": [
     {
       "full_name": "David Gatti",
-      "photo": "/path/file.jpg",
+      "photo": "/users/david.jpg",
       "urls": [
         {
           "site": "linkedin",
@@ -40,7 +40,7 @@
   "guests": [
     {
       "full_name": "David Gatti",
-      "photo": "/path/file.jpg",
+      "photo": "/users/david.jpg",
       "urls": [
         {
           "site": "linkedin",

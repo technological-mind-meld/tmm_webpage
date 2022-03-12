@@ -4,6 +4,7 @@
       <div class="banner-description">
         <!-- Main Image -->
         <v-img src="/david.jpg" max-width="45%" contain />
+        <v-img src="/users/david.jpg" max-width="45%" contain />
 
         <!-- Description Text -->
         <p>
