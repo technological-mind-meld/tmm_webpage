@@ -3,12 +3,10 @@
     <v-col cols="12" md="7">
       <div class="banner-description">
         <!-- Main Image -->
-        <v-img src="/david.jpg" max-width="45%" contain />
         <v-img src="/users/david.jpg" max-width="45%" contain />
 
         <!-- Description Text -->
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam, molestias obcaecati perspiciatis quis repellat vero voluptates. Ad, consectetur consequuntur dolore eaque, facilis fuga magni perspiciatis quo vero voluptate voluptatibus.
+        <p class="text-subtitle-1">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam, molestias obcaecati perspiciatis quis repellat vero voluptates. Ad, consectetur consequuntur dolore eaque, facilis fuga magni perspiciatis quo vero voluptate voluptatibus.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam, molestias obcaecati perspiciatis quis repellat vero voluptates. Ad, consectetur consequuntur dolore eaque, facilis fuga magni perspiciatis quo vero voluptate voluptatibus.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam, molestias obcaecati perspiciatis quis repellat vero voluptates. Ad, consectetur consequuntur dolore eaque, facilis fuga magni perspiciatis quo vero voluptate voluptatibus.
@@ -32,7 +30,7 @@ export default {
 .banner-description {
   .v-image {
     float: left;
-    margin: 0 25px 20px 0;
+    margin: 0 25px 15px 0;
   }
 }
 </style>

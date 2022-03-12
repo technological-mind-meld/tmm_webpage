@@ -4,9 +4,9 @@
       <div class="d-flex align-center">
         <div class="episode-number mr-4 px-4 py-3 primary--text font-weight-bold" v-text="index" />
         <div class="episode-content">
-          <h3 class="mb-1" v-text="episode.title" />
-          <p class="mb-1" v-text="episode.description" />
-          <p class="mb-0">
+          <h3 class="text-h5" v-text="episode.title" />
+          <p class="text-subtitle-1 mb-1" v-text="episode.description" />
+          <p class="text-subtitle-2 mb-0">
             <span v-if="host" class="font-weight-bold" v-text="`${host.full_name} - `" />
             {{ tags }}
           </p>
@@ -52,14 +52,8 @@ export default {
     text-align: center;
   }
 
-  h3 {
-    font-size: 18px;
-    color: black;
-  }
-
-  p {
-    font-size: 16px;
-    color: black;
+  .episode-content {
+    color: #222;
   }
 }
 </style>
