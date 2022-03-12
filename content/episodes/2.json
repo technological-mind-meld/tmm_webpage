@@ -1,0 +1,60 @@
+{
+  "id": 2,
+  "title": "This is a title 2",
+  "description": "This is a description 2.",
+  "tags": [ "aws", "startup" ],
+  "media": [
+    {
+      "provider": "youtube",
+      "url": "https://www.youtube.com/watch?v=W1XRLHP9sYI"
+    },
+    {
+      "provider": "audio",
+      "url": "https://www.example.com/1.mp3"
+    },
+    {
+      "provider": "video",
+      "url": "https://www.example.com/1.mpg"
+    }
+  ],
+  "hosts": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/path/file.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    }
+  ],
+  "guests": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/path/file.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    }
+  ]
+}
