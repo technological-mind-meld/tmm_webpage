@@ -21,7 +21,7 @@ export default {
     }
   },
   async fetch () {
-    this.episodes = await this.$content('episodes').fetch()
+    this.episodes = await this.$content('episodes').sortBy('createdAt', 'desc').fetch()
   }
 }
 </script>
