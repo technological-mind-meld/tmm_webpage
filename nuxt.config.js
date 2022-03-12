@@ -46,7 +46,13 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    ['@nuxtjs/pwa', {
+      icon: {
+        source: './static/logo-icon.png'
+      },
+      meta: false,
+      manifest: false
+    }],
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // Sitemap module configuration (https://sitemap.nuxtjs.org/guide/setup)
