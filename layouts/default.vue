@@ -1,11 +1,13 @@
 <template>
   <v-app>
     <v-app-bar app elevation="1">
-      <div class="mx-auto">
-        <nuxt-link :to="{ name: 'index' }">
-          <v-img src="/logo/logo_dark.svg" max-height="48" contain />
-        </nuxt-link>
-      </div>
+      <v-container>
+        <div class="mx-auto">
+          <nuxt-link :to="{ name: 'index' }">
+            <v-img src="/logo/logo_dark.svg" max-height="48" contain />
+          </nuxt-link>
+        </div>
+      </v-container>
     </v-app-bar>
 
     <v-main>
