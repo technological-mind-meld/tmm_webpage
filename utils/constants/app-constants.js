@@ -1,0 +1,5 @@
+const MIXPANEL_TOKEN = 'e6518ffaa23e57306ea4cdca3d846053'
+
+export {
+  MIXPANEL_TOKEN
+}
