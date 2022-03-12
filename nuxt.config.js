@@ -54,6 +54,14 @@ export default {
       path: '/sitemap.xml',
       hostname: process.env.BASE_URL || 'https://podcast.0x4447.com',
       gzip: true
+    }],
+    // Robots module configuration (https://www.npmjs.com/package/@nuxtjs/robots#setup)
+    ['@nuxtjs/robots', {
+      UserAgent: '*',
+      Allow: '/',
+      Disallow: '/_nuxt/',
+      CrawlDelay: 5,
+      Sitemap: 'https://podcast.0x4447.com/sitemap.xml'
     }]
   ],
 
