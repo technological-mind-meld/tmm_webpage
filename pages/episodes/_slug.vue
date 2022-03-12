@@ -4,10 +4,6 @@
 
     <h1>{{ episode.title }}</h1>
     <p>{{ episode.description }}</p>
-
-    <nuxt-link :to="{ name: 'index' }">
-      Home
-    </nuxt-link>
   </div>
 </template>
 
