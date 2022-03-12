@@ -13,7 +13,7 @@
         </div>
       </v-col>
       <v-col cols="12" md="9">
-        <VideoEmbed youtube-id="W1XRLHP9sYI" />
+        <VideoEmbed :youtube-id="youtubeId" />
       </v-col>
     </v-row>
 
@@ -61,6 +61,10 @@ export default {
     },
     tags () {
       return this.episode.tags.map(tag => `#${tag}`).join(', ')
+    },
+    youtubeId () {
+      const youtubeProvider = this.episode.media.find(media => media.provider === 'youtube')
+      return youtubeProvider ? youtubeProvider.url.split('v=')[1] : null
     }
   }
 }
