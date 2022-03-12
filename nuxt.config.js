@@ -32,7 +32,9 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
+    // https://go.nuxtjs.dev/vuetify
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -68,6 +70,19 @@ export default {
   // Router configuration (https://nuxtjs.org/docs/configuration-glossary/configuration-router)
   router: {
     trailingSlash: true
+  },
+
+  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
+  vuetify: {
+    customVariables: ['~/assets/variables.scss'],
+    optionsPath: '~/vuetify.options.js',
+    defaultAssets: {
+      font: {
+        family: 'Roboto' // TODO: If you need, change default font family
+      },
+      icons: false
+    },
+    treeShake: true
   },
 
   // Feed module configuration (https://github.com/nuxt-community/feed-module#setup)
