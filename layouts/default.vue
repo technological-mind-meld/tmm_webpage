@@ -9,7 +9,7 @@
     </v-app-bar>
 
     <v-main>
-      <v-container>
+      <v-container class="mt-6">
         <Nuxt />
       </v-container>
     </v-main>

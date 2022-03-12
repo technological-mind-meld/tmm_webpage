@@ -1,10 +1,19 @@
 <template>
-  <div>
-    <nuxt-link :to="{ name: 'episodes-slug', params: { slug: episode.slug } }">
-      {{ episode.title }}
-    </nuxt-link>
-    <p>{{ episode.description }}</p>
-  </div>
+  <v-card :to="{ name: 'episodes-slug', params: { slug: episode.slug } }" outlined tile class="episode-card mb-4">
+    <v-card-text>
+      <div class="d-flex align-center">
+        <div class="episode-number mr-4 px-4 py-3 primary--text font-weight-bold" v-text="index" />
+        <div class="episode-content">
+          <h3 class="mb-1" v-text="episode.title" />
+          <p class="mb-1" v-text="episode.description" />
+          <p class="mb-0">
+            <span v-if="host" class="font-weight-bold" v-text="`${host.full_name} - `" />
+            {{ tags }}
+          </p>
+        </div>
+      </div>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script>
@@ -14,7 +23,43 @@ export default {
     episode: {
       type: Object,
       required: true
+    },
+    index: {
+      type: Number,
+      default: 0
+    }
+  },
+  computed: {
+    host () {
+      const { hosts = [] } = this.episode
+      return hosts.length > 0 ? hosts[0] : null
+    },
+    tags () {
+      return this.episode.tags.map(tag => `#${tag}`).join(', ')
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.episode-card {
+  border-left: 0;
+  border-right: 0;
+
+  .episode-number {
+    border: 2px solid #0286ee;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: black;
+  }
+
+  p {
+    font-size: 16px;
+    color: black;
+  }
+}
+</style>

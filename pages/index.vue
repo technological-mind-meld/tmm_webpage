@@ -1,14 +1,8 @@
 <template>
   <div>
-    <CalendlyWidget v-if="false" />
+    <TheBanner />
 
-    <div v-if="$fetchState.pending">
-      Loading episodes...
-    </div>
-    <div v-else-if="$fetchState.error">
-      {{ $fetchState.error }}
-    </div>
-    <TheEpisodeList v-else :episodes="episodes" />
+    <TheEpisodeList :loading="$fetchState.pending" :episodes="episodes" />
   </div>
 </template>
 

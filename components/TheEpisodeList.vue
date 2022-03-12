@@ -1,6 +1,14 @@
 <template>
   <div>
-    <EpisodeListItem v-for="episode in episodes" :key="episode.id" :episode="episode" />
+    <CircularLoading v-if="loading" />
+    <template v-else>
+      <EpisodeListItem
+        v-for="(episode, index) in episodes"
+        :key="episode.id"
+        :episode="episode"
+        :index="index + 1"
+      />
+    </template>
   </div>
 </template>
 
@@ -8,6 +16,10 @@
 export default {
   name: 'TheEpisodeList',
   props: {
+    loading: {
+      type: Boolean,
+      default: false
+    },
     episodes: {
       type: Array,
       default () {
