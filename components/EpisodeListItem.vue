@@ -1,13 +1,16 @@
 <template>
-  <v-card :to="{ name: 'episodes-slug', params: { slug: episode.slug } }" outlined tile class="episode-card mb-4">
+  <v-card :to="{ name: 'episodes-slug', params: { slug: episode.slug } }" outlined tile class="episode-card" color="transparent">
     <v-card-text>
       <div class="d-flex align-center">
-        <div class="episode-number mr-4 px-4 py-3 primary--text font-weight-bold" v-text="index" />
+        <div class="episode-number d-flex align-center justify-center flex-shrink-0 mr-4 primary--text" v-text="index" />
         <div class="episode-content">
           <h3 class="text-h5" v-text="episode.title" />
-          <p class="text-subtitle-1 mb-1" v-text="episode.description" />
-          <p class="text-subtitle-2 mb-0">
-            {{ episode.createdAt | date }}
+          <p class="description mb-1" v-text="episode.description" />
+          <p class="meta mb-0">
+            <span class="font-weight-bold">
+              {{ episode.createdAt | date }}
+            </span>
+            -
             <span v-if="host" v-text="`${host.full_name} - `" />
             {{ tags }}
           </p>
@@ -50,11 +53,22 @@ export default {
   .episode-number {
     border: 2px solid #0286ee;
     font-size: 18px;
-    text-align: center;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
   }
 
   .episode-content {
     color: #222;
+
+    p.description {
+      font-size: 1.05rem;
+      color: $text-gray-700;
+    }
+
+    p.meta {
+      color: $text-gray-700;
+    }
   }
 }
 </style>

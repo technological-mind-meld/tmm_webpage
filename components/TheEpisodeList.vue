@@ -2,12 +2,14 @@
   <div>
     <CircularLoading v-if="loading" />
     <template v-else>
-      <EpisodeListItem
-        v-for="(episode, index) in episodes"
-        :key="episode.id"
-        :episode="episode"
-        :index="index + 1"
-      />
+      <template v-for="(episode, index) in episodes">
+        <EpisodeListItem
+          :key="episode.slug"
+          :episode="episode"
+          :index="index + 1"
+        />
+        <v-divider v-if="index < episodes.length - 1" :key="episodes.length + index" class="my-2" />
+      </template>
     </template>
   </div>
 </template>
