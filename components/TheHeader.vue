@@ -21,20 +21,7 @@
               :key="item.name"
               class="header-navbar__item"
             >
-              <a
-                v-if="item.isExternal"
-                :href="item.url"
-                rel="noopener noreferrer external"
-                target="_blank"
-                class="header-navbar__item-link external-link"
-              >
-                {{ item.name }}
-              </a>
-              <a
-                v-else
-                :href="item.url"
-                class="header-navbar__item-link"
-              >
+              <a :href="item.url" target="_blank" class="header-navbar__item-link">
                 {{ item.name }}
               </a>
             </li>
@@ -91,8 +78,7 @@ export default {
       menuItems: [
         {
           name: 'RSS',
-          url: 'https://podcast.0x4447.com/feed.xml',
-          isExternal: true
+          url: 'https://podcast.0x4447.com/feed.xml'
         }
       ],
       scrollPosition: null
