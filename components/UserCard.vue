@@ -1,7 +1,7 @@
 <template>
   <v-hover v-slot="{ hover }">
-    <v-card width="60%" class="text-center" tile elevation="0">
-      <v-img :src="photoURL" :alt="fullName">
+    <v-card width="60%" class="user-card text-center" tile elevation="0" color="transparent">
+      <v-img :src="photoURL" :alt="fullName" class="user-avatar">
         <v-expand-transition>
           <div v-if="hover" class="d-flex align-center justify-center social-wrapper">
             <v-btn v-if="linkedinURL" icon :href="linkedinURL" target="_blank" color="primary">
@@ -56,9 +56,15 @@ export default {
 }
 </script>
 
-<style scoped>
-.social-wrapper {
-  background-color: rgb(100 100 100 / 40%);
-  height: 100%;
+<style lang="scss" scoped>
+.user-card {
+  .v-image {
+    border-radius: 0.375rem !important;
+  }
+
+  .social-wrapper {
+    background-color: rgb(100 100 100 / 40%);
+    height: 100%;
+  }
 }
 </style>

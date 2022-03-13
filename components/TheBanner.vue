@@ -31,6 +31,7 @@ export default {
   .v-image {
     float: left;
     margin: 0 25px 15px 0;
+    border-radius: 0.375rem;
   }
 }
 </style>
