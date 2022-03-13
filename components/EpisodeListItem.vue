@@ -7,7 +7,8 @@
           <h3 class="text-h5" v-text="episode.title" />
           <p class="text-subtitle-1 mb-1" v-text="episode.description" />
           <p class="text-subtitle-2 mb-0">
-            <span v-if="host" class="font-weight-bold" v-text="`${host.full_name} - `" />
+            {{ episode.createdAt | date }}
+            <span v-if="host" v-text="`${host.full_name} - `" />
             {{ tags }}
           </p>
         </div>

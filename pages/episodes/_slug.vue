@@ -20,7 +20,11 @@
     <v-divider class="my-8" />
 
     <h1 class="text-h4 font-weight-light mb-4" v-text="episode.title" />
-    <p class="text-subtitle-1" v-text="tags" />
+    <p class="text-subtitle-1">
+      {{ episode.createdAt | date }}
+      -
+      {{ tags }}
+    </p>
     <p class="text-subtitle-1" v-text="episode.description" />
   </div>
 </template>
