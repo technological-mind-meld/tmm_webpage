@@ -18,6 +18,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/styles/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -77,12 +78,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     optionsPath: '~/vuetify.options.js',
-    defaultAssets: {
-      font: {
-        family: 'Roboto' // TODO: If you need, change default font family
-      },
-      icons: false
-    },
+    defaultAssets: false,
     treeShake: true
   },
 
