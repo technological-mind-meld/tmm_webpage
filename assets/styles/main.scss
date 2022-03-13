@@ -10,6 +10,7 @@
 }
 
 /* Style outbound links */
+/*
 a[href*="//"]::after {
   display: inline-flex;
   width: 10px;
@@ -20,6 +21,7 @@ a[href*="//"]::after {
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
+*/
 
 .external-link {
   display: flex;
