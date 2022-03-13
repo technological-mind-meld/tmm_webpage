@@ -36,6 +36,24 @@
           "url": "https://www.example.com"
         }
       ]
+    },
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
     }
   ],
   "guests": [
