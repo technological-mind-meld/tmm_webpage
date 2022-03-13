@@ -1,7 +1,8 @@
 import {
   mdiLinkedin,
   mdiGithub,
-  mdiWeb
+  mdiWeb,
+  mdiMenu
 } from '@mdi/js'
 
 export default {
@@ -10,7 +11,8 @@ export default {
       icons: {
         mdiLinkedin,
         mdiGithub,
-        mdiWeb
+        mdiWeb,
+        mdiMenu
       }
     }
   }
