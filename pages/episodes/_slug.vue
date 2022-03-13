@@ -25,7 +25,7 @@
       -
       {{ tags }}
     </p>
-    <p class="text-subtitle-1" v-text="episode.description" />
+    <p class="episode-description" v-text="episode.description" />
   </div>
 </template>
 
@@ -73,3 +73,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+p.episode-description {
+  font-size: 1.1875rem;
+  color: $text-gray-700;
+}
+</style>
