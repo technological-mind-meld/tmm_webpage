@@ -4,8 +4,8 @@
     :class="[scrollableClass]"
     class="header header--sticky"
   >
-    <v-container>
-      <v-row class="header-content">
+    <v-container class="py-0">
+      <div class="header-content">
         <NuxtLink :to="{ name: 'index' }" class="logo-header">
           <img
             alt="0x4447, LLC."
@@ -75,7 +75,7 @@
             </v-menu>
           </div>
         </div>
-      </v-row>
+      </div>
     </v-container>
   </header>
 </template>
@@ -143,7 +143,6 @@ export default {
   .logo-header {
     width: 130px;
     min-width: 130px;
-    padding-left: 12px;
 
     @media (max-width: 968px) {
       margin: 0 auto;
