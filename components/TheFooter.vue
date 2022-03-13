@@ -38,30 +38,32 @@
           </div>
 
           <!--region Menu Items-->
-          <div v-for="(menu, $menuIndex) in menuItems" :key="$menuIndex" class="col-4 col-md-3 col-lg-2">
-            <!-- Heading -->
-            <h6 class="footer-list__title">
-              {{ menu.title }}
-            </h6>
+          <template v-if="showMenuItems">
+            <div v-for="(menu, $menuIndex) in menuItems" :key="$menuIndex" class="col-4 col-md-3 col-lg-2">
+              <!-- Heading -->
+              <h6 class="footer-list__title">
+                {{ menu.title }}
+              </h6>
 
-            <!-- List -->
-            <ul class="list-unstyled">
-              <li
-                v-for="(item, $itemIndex) in menu.children"
-                :key="$itemIndex"
-                class="footer-list__item"
-              >
-                <a
-                  :href="item.link"
-                  target="_blank"
-                  rel="noopener nofollow"
-                  class="footer-list__item-link"
+              <!-- List -->
+              <ul class="list-unstyled">
+                <li
+                  v-for="(item, $itemIndex) in menu.children"
+                  :key="$itemIndex"
+                  class="footer-list__item"
                 >
-                  {{ item.name }}
-                </a>
-              </li>
-            </ul>
-          </div>
+                  <a
+                    :href="item.link"
+                    target="_blank"
+                    rel="noopener nofollow"
+                    class="footer-list__item-link"
+                  >
+                    {{ item.name }}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </template>
           <!--endregion-->
         </div>
         <!-- / .row -->
@@ -80,6 +82,7 @@ export default {
         { name: 'Twitter', link: 'https://twitter.com/0x4447', image: '/public/img/social/twitter.svg' },
         { name: 'LinkedIn', link: 'https://www.linkedin.com/company/zer0x4447/', image: '/public/img/social/linkedin.svg' }
       ],
+      showMenuItems: false,
       menuItems: [
         {
           title: 'RESOURCES',
