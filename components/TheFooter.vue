@@ -78,8 +78,7 @@ export default {
     return {
       socialItems: [
         { name: 'Twitter', link: 'https://twitter.com/0x4447', image: '/public/img/social/twitter.svg' },
-        { name: 'LinkedIn', link: 'https://www.linkedin.com/company/zer0x4447/', image: '/public/img/social/linkedin.svg' },
-        { name: 'GitHub', link: 'https://github.com/0x4447', image: '/public/img/social/github.svg' }
+        { name: 'LinkedIn', link: 'https://www.linkedin.com/company/zer0x4447/', image: '/public/img/social/linkedin.svg' }
       ],
       menuItems: [
         {
