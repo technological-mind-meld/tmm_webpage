@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheBanner />
+    <TheBanner class="mb-12" />
 
     <TheEpisodeList :loading="$fetchState.pending" :episodes="episodes" />
   </div>
