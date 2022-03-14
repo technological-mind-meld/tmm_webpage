@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SocialHead :title="episode.title" :description="episode.description" type="video.episode" />
+    <SocialHead :title="episode.title" :description="''" type="video.episode" />
 
     <v-row>
       <v-col cols="12" md="3">
@@ -25,11 +25,10 @@
 
     <h1 class="text-h4 font-weight-light mb-4" v-text="episode.title" />
     <p class="text-subtitle-1">
-      {{ episode.createdAt | date }}
+      {{ episode.date | date }}
       -
       {{ tags }}
     </p>
-    <p class="episode-description" v-text="episode.description" />
   </div>
 </template>
 
@@ -85,10 +84,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-p.episode-description {
-  font-size: 1.1875rem;
-  color: $text-gray-700;
-}
-</style>

@@ -8,5 +8,5 @@ export const getEpisodeRoutes = async () => {
 export const getEpisodes = async () => {
   const { $content } = require('@nuxt/content')
 
-  return await $content('episodes').only(['id', 'title', 'description', 'slug']).fetch()
+  return await $content('episodes').only(['title', 'slug']).fetch()
 }

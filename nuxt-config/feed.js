@@ -13,11 +13,9 @@ export const feed = {
     const episodes = await getEpisodes()
     episodes.forEach((episode) => {
       feed.addItem({
-        id: episode.id,
+        id: episode.slug,
         title: episode.title,
-        link: `${BASE_URL}/episodes/${episode.slug}/`,
-        description: episode.description,
-        content: episode.description
+        link: `${BASE_URL}/episodes/${episode.slug}/`
       })
     })
   },

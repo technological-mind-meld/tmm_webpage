@@ -2,10 +2,9 @@
   <v-card :to="{ name: 'episodes-slug', params: { slug: episode.slug } }" outlined tile class="episode-card" color="transparent">
     <v-card-text>
       <div class="d-flex align-center">
-        <div class="episode-number d-flex align-center justify-center flex-shrink-0 mr-4 primary--text" v-text="index" />
+        <div class="episode-number d-flex align-center justify-center flex-shrink-0 mr-4 primary--text" v-text="episode.slug" />
         <div class="episode-content">
           <h3 class="text-h5" v-text="episode.title" />
-          <p class="description mb-1" v-text="episode.description" />
           <p class="meta mb-0">
             <span class="font-weight-bold">
               {{ episode.date | date }}
@@ -27,10 +26,6 @@ export default {
     episode: {
       type: Object,
       required: true
-    },
-    index: {
-      type: Number,
-      default: 0
     }
   },
   computed: {
@@ -47,8 +42,6 @@ export default {
 
 <style lang="scss" scoped>
 .episode-card {
-  border-left: 0;
-  border-right: 0;
 
   .episode-number {
     border: 2px solid #0286ee;
@@ -60,11 +53,6 @@ export default {
 
   .episode-content {
     color: #222;
-
-    p.description {
-      font-size: 1.05rem;
-      color: $text-gray-700;
-    }
 
     p.meta {
       color: $text-gray-700;
