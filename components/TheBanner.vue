@@ -17,7 +17,13 @@
             technological-mind-meld
           </h2>
           <p>
-           I want help people make better decisions regarding the cloud and the direction of their business. I’m making this show to share my experience about the Cloud and AWS, by spending two hours with you where I’ll answer any question you might have, which should result in an interesting conversation for you and the listeners.
+            I’m David and I’ve been doing AWS consulting since 2016. Now I decided that I want to help owners and CEOs to make better decisions regarding technology and the Cloud, especially when it comes to AWS.
+          </p>
+          <p>
+            In this podcast I share my experience about the Cloud and AWS. You get to spend two hours with me, where you can ask me any question you might have about AWS and the Cloud in general. In return the chat will be posted publicly for everyone to learn from.
+          </p>
+          <p>
+            On the right you can find my calendar, pick a date that works for you.
           </p>
         </div>
       </div>
