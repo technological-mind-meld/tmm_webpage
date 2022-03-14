@@ -1,5 +1,12 @@
 <template>
-  <v-card width="60%" class="user-card text-center" tile elevation="0" color="transparent">
+  <v-card
+    width="60%"
+    max-width="150px"
+    class="user-card text-center"
+    tile
+    outlined
+    color="transparent"
+  >
     <v-img :src="photoURL" :alt="fullName" class="user-avatar rounded" />
     <div class="text-subtitle-1" v-text="fullName" />
   </v-card>

@@ -2,7 +2,10 @@
   <div>
     <SocialHead :title="episode.title" type="video.episode" />
 
-    <v-row>
+    <v-row class="flex-row-reverse">
+      <v-col cols="12" md="9">
+        <VideoEmbed :youtube-id="youtubeId" />
+      </v-col>
       <v-col cols="12" md="3">
         <div class="d-flex flex-column align-center justify-center fill-height">
           <MultipleUserList v-if="hasMultipleHost" :users="episode.hosts" />
@@ -15,9 +18,6 @@
           <MultipleUserList v-if="hasMultipleGuest" :users="episode.guests" />
           <UserCard v-else-if="guest" :user="guest" />
         </div>
-      </v-col>
-      <v-col cols="12" md="9">
-        <VideoEmbed :youtube-id="youtubeId" />
       </v-col>
     </v-row>
 
