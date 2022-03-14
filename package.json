@@ -9,8 +9,8 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
-    "lint": "yarn lint:js && yarn lint:style",
-    "lintfix": "yarn lint:js --fix && yarn lint:style --fix"
+    "lint": "npm run lint:js && npm run lint:style",
+    "lintfix": "npm run lint:js -- --fix && npm run lint:style -- --fix"
   },
   "dependencies": {
     "@mdi/js": "^6.5.95",
@@ -26,7 +26,7 @@
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
-    "vuetify": "^2.6.4",
+    "vuetify": "^2.6.1",
     "webpack": "^4.46.0"
   },
   "devDependencies": {
