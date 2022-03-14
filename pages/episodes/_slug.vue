@@ -8,15 +8,15 @@
       </v-col>
       <v-col cols="12" md="3">
         <div class="d-flex flex-column align-center justify-center fill-height">
-          <MultipleUserList v-if="hasMultipleHost" :users="episode.hosts" />
-          <UserCard v-else-if="host" :user="host" />
+          <UserList v-if="hasMultipleHost" :users="episode.hosts" />
+          <UserAvatarWithName v-else-if="host" :user="host" />
 
           <div class="my-4 font-weight-bold">
             AND
           </div>
 
-          <MultipleUserList v-if="hasMultipleGuest" :users="episode.guests" />
-          <UserCard v-else-if="guest" :user="guest" />
+          <UserList v-if="hasMultipleGuest" :users="episode.guests" />
+          <UserAvatarWithName v-else-if="guest" :user="guest" />
         </div>
       </v-col>
     </v-row>
