@@ -2,7 +2,6 @@
   "id": 1,
   "date": "2022-01-01",
   "title": "Discussion on how to best store data in AWS DynamoDB.",
-  "description": "Bob Brown is the CEO of example.com, and he is facing the issue of DynamoDB scalability. In theory DDB should be very fast and performant, but what happens is that it is slow. The reason turns out that the data is saved in the wrong way which causes a lot unnecessary latency.",
   "tags": [ "aws", "startup", "dynamodb", "performance" ],
   "media": [
     {
