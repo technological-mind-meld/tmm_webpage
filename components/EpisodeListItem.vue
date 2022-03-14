@@ -1,5 +1,5 @@
 <template>
-  <v-card :to="{ name: 'episodes-slug', params: { slug: episode.slug } }" outlined class="episode-card" color="transparent">
+  <v-card :to="{ name: 'episodes-slug', params: { slug: episode.slug } }" outlined class="episode-card overflow-hidden" color="transparent">
     <v-card-text>
       <div class="d-flex align-start">
         <div class="episode-number d-flex align-center justify-center flex-shrink-0 mr-4 primary--text" v-text="episode.slug" />
