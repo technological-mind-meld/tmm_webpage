@@ -8,7 +8,7 @@
           <p class="description mb-1" v-text="episode.description" />
           <p class="meta mb-0">
             <span class="font-weight-bold">
-              {{ episode.createdAt | date }}
+              {{ episode.date | date }}
             </span>
             -
             <span v-if="host" v-text="`${host.full_name} - `" />

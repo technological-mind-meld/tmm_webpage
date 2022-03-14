@@ -78,7 +78,7 @@ export default {
       menuItems: [
         {
           name: 'RSS',
-          url: 'https://podcast.0x4447.com/feed.xml'
+          url: '/feed.xml'
         }
       ],
       scrollPosition: null

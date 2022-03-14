@@ -14,12 +14,10 @@
         <!-- Description Text -->
         <div>
           <h2 class="pt-5">
-            Memory dump podcast
+            technological-mind-meld
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam, molestias obcaecati perspiciatis quis repellat vero voluptates. Ad, consectetur consequuntur dolore eaque, facilis fuga magni perspiciatis quo vero voluptate voluptatibus.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam, molestias obcaecati perspiciatis quis repellat vero voluptates. Ad, consectetur consequuntur dolore eaque, facilis fuga magni perspiciatis quo vero voluptate voluptatibus.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laboriosam, molestias obcaecati perspiciatis quis repellat vero voluptates. Ad, consectetur consequuntur dolore eaque, facilis fuga magni perspiciatis quo vero voluptate voluptatibus.
+           I want help people make better decisions regarding the cloud and the direction of their business. I’m making this show to share my experience about the Cloud and AWS, by spending two hours with you where I’ll answer any question you might have, which should result in an interesting conversation for you and the listeners.
           </p>
         </div>
       </div>

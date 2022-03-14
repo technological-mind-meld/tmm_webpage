@@ -1,6 +1,6 @@
 {
   "id": 2,
-  "createdAt": "2022-02-01",
+  "date": "2022-02-01",
   "title": "Aliquam a posuere sem, vitae iaculis ipsum. Curabitur eu eros est",
   "description": "Duis lacinia venenatis turpis et luctus. Fusce ac condimentum libero. Donec in metus et nibh rutrum commodo eget id justo. In hac habitasse platea dictumst. Pellentesque in dolor ac quam aliquet semper a maximus justo. Pellentesque vulputate dolor est, vel laoreet augue ornare vitae.",
   "tags": [ "aws", "startup" ],
@@ -8,14 +8,6 @@
     {
       "provider": "youtube",
       "url": "https://www.youtube.com/watch?v=W1XRLHP9sYI"
-    },
-    {
-      "provider": "audio",
-      "url": "https://www.example.com/1.mp3"
-    },
-    {
-      "provider": "video",
-      "url": "https://www.example.com/1.mpg"
     }
   ],
   "hosts": [
