@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { image as defaultImage } from '~/assets/defaultHeadTags.json'
+import { image as defaultImage, description as defaultDescription } from '~/assets/defaultHeadTags.json'
 
 export default {
   name: 'SocialHead',
@@ -14,7 +14,7 @@ export default {
     },
     description: {
       type: String,
-      required: true
+      default: ''
     },
     image: {
       type: String,
@@ -27,13 +27,14 @@ export default {
   },
   head () {
     const imageUrl = this.image || defaultImage
+    const description = this.description || defaultDescription
 
     return {
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.description
+          content: description
         },
         {
           hid: 'twitter:title',
@@ -43,7 +44,7 @@ export default {
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: this.description
+          content: description
         },
         {
           hid: 'og:title',
@@ -53,7 +54,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: description
         },
         {
           hid: 'twitter:image',

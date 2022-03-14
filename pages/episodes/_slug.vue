@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SocialHead :title="episode.title" :description="''" type="video.episode" />
+    <SocialHead :title="episode.title" type="video.episode" />
 
     <v-row>
       <v-col cols="12" md="3">
