@@ -7,7 +7,7 @@
           :key="episode.slug"
           :episode="episode"
         />
-        <v-divider v-if="index < episodes.length - 1" :key="episodes.length + index" class="my-2" />
+        <v-divider v-if="index < episodes.length - 1" :key="episodes.length + index + 100" class="my-2" />
       </template>
     </template>
   </div>
