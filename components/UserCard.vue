@@ -1,24 +1,8 @@
 <template>
-  <v-hover v-slot="{ hover }">
-    <v-card width="60%" class="user-card text-center" tile elevation="0" color="transparent">
-      <v-img :src="photoURL" :alt="fullName" class="user-avatar rounded">
-        <v-expand-transition>
-          <div v-if="hover" class="d-flex align-center justify-center social-wrapper">
-            <v-btn v-if="linkedinURL" icon :href="linkedinURL" target="_blank" color="primary">
-              <v-icon>{{ icons.mdiLinkedin }}</v-icon>
-            </v-btn>
-            <v-btn v-if="personalURL" icon :href="personalURL" target="_blank" color="#333">
-              <v-icon>{{ icons.mdiWeb }}</v-icon>
-            </v-btn>
-            <v-btn v-if="githubURL" icon :href="githubURL" target="_blank" color="#333">
-              <v-icon>{{ icons.mdiGithub }}</v-icon>
-            </v-btn>
-          </div>
-        </v-expand-transition>
-      </v-img>
-      <div class="text-subtitle-1" v-text="fullName" />
-    </v-card>
-  </v-hover>
+  <v-card width="60%" class="user-card text-center" tile elevation="0" color="transparent">
+    <v-img :src="photoURL" :alt="fullName" class="user-avatar rounded" />
+    <div class="text-subtitle-1" v-text="fullName" />
+  </v-card>
 </template>
 
 <script>

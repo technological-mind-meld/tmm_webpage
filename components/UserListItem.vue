@@ -1,5 +1,5 @@
 <template>
-  <li class="d-inline-block user-list-item">
+  <li class="d-inline-block user-list-item rounded overflow-hidden">
     <v-menu offset-y open-on-hover :close-on-content-click="false">
       <template #activator="{ on, attrs }">
         <img :src="photoURL" :alt="fullName" v-bind="attrs" v-on="on">
@@ -7,8 +7,8 @@
       <v-card width="250px">
         <v-list>
           <v-list-item>
-            <v-list-item-avatar>
-              <img :src="photoURL" :alt="fullName">
+            <v-list-item-avatar rounded>
+              <img :src="photoURL" :alt="fullName" class="rounded">
             </v-list-item-avatar>
 
             <v-list-item-content>
@@ -56,7 +56,6 @@ li.user-list-item {
   border: 2px solid #ddd;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   cursor: pointer;
   position: relative;
 
@@ -68,7 +67,6 @@ li.user-list-item {
   img {
     width: 40px;
     height: 40px;
-    border-radius: 100%;
     vertical-align: middle;
   }
 }
