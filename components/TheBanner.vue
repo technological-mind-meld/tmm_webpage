@@ -3,7 +3,7 @@
     <v-col cols="12" md="7">
       <div class="banner-description">
         <!-- Main Image -->
-        <v-img src="/users/david.jpg" lazy-src="/users/david.jpg" max-width="45%" contain>
+        <v-img src="/users/david.jpg" lazy-src="/users/david.jpg" max-width="45%" contain class="rounded">
           <template #placeholder>
             <v-row class="fill-height" align="center" justify="center" no-gutters>
               <v-progress-circular indeterminate color="grey lighten-5" />
@@ -46,7 +46,6 @@ export default {
   .v-image {
     float: left;
     margin: 0 30px 15px 0;
-    border-radius: 0.375rem;
   }
 
   p {
