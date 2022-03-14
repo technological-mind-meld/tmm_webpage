@@ -1,5 +1,4 @@
 {
-  "id": 1,
   "date": "2022-01-01",
   "title": "Discussion on how to best store data in AWS DynamoDB.",
   "tags": [ "aws", "startup", "dynamodb", "performance" ],
