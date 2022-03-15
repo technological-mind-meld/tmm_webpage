@@ -1,0 +1,51 @@
+{
+  "date": "2022-03-15",
+  "title": "Episode zero - why am I doing this podcast.",
+  "tags": [ "aws", "ceo", "co-founder", "cloud" ],
+  "media": [
+    {
+      "provider": "youtube",
+      "url": "https://www.youtube.com/watch?v=jI9I3rt4vkM"
+    }
+  ],
+  "hosts": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.linkedin.com/in/gattidavid/"
+        },
+        {
+          "site": "twitter",
+          "url": "https://twitter.com/0x4447"
+        },
+        {
+          "site": "github",
+          "url": "https://github.com/davidgatti"
+        }
+      ]
+    }
+  ],
+  "guests": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.linkedin.com/in/gattidavid/"
+        },
+        {
+          "site": "twitter",
+          "url": "https://twitter.com/0x4447"
+        },
+        {
+          "site": "github",
+          "url": "https://github.com/davidgatti"
+        }
+      ]
+    }
+  ]
+}
