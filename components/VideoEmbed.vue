@@ -6,6 +6,7 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
       class="rounded"
+      title="YouTube Player"
     />
   </div>
 </template>
