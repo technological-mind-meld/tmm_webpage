@@ -15,7 +15,8 @@ export const feed = {
       feed.addItem({
         id: episode.slug,
         title: episode.title,
-        link: `${BASE_URL}/episodes/${episode.slug}/`
+        link: `${BASE_URL}/episodes/${episode.slug}/`,
+        date: new Date(episode.date)
       })
     })
   },
