@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - echo AWS_REGION=$AWS_REGION >> .env
+      - echo AWS_IDENTITY_POOL_ID=$AWS_IDENTITY_POOL_ID >> .env
+      - echo NODE_ENV=production >> .env
+      - npm install
+      - npm run generate
+  pre_build:
+    commands:
+      - aws s3 sync ./dist s3://$S3_BUCKET_WEBPAGE --delete --cache-control max-age=31556952
+      - aws s3 cp s3://$S3_BUCKET_WEBPAGE/sw.js s3://$S3_BUCKET_WEBPAGE/sw.js --cache-control max-age=0 --metadata reason=no-cache
+      - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
