@@ -1,0 +1,113 @@
+{
+  "date": "2022-03-10",
+  "title": "Phasellus sit amet nunc nibh. Mauris eget malesuada sem",
+  "tags": [ "aws", "startup" ],
+  "media": [
+    {
+      "provider": "youtube",
+      "url": "https://www.youtube.com/watch?v=W1XRLHP9sYI"
+    },
+    {
+      "provider": "audio",
+      "url": "https://www.example.com/1.mp3"
+    },
+    {
+      "provider": "video",
+      "url": "https://www.example.com/1.mpg"
+    }
+  ],
+  "hosts": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    },
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    }
+  ],
+  "guests": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    },
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    },
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    }
+  ]
+}

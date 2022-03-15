@@ -1,0 +1,77 @@
+{
+  "date": "2022-01-01",
+  "title": "Discussion on how to best store data in AWS DynamoDB.",
+  "tags": [ "aws", "startup", "dynamodb", "performance" ],
+  "media": [
+    {
+      "provider": "youtube",
+      "url": "https://www.youtube.com/watch?v=W1XRLHP9sYI"
+    },
+    {
+      "provider": "audio",
+      "url": "https://www.example.com/1.mp3"
+    },
+    {
+      "provider": "video",
+      "url": "https://www.example.com/1.mpg"
+    }
+  ],
+  "hosts": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    },
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    }
+  ],
+  "guests": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    }
+  ]
+}

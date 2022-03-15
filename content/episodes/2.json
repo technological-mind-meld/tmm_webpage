@@ -1,0 +1,105 @@
+{
+  "date": "2022-02-01",
+  "title": "Aliquam a posuere sem, vitae iaculis ipsum. Curabitur eu eros est",
+  "tags": [ "aws", "startup" ],
+  "media": [
+    {
+      "provider": "youtube",
+      "url": "https://www.youtube.com/watch?v=W1XRLHP9sYI"
+    }
+  ],
+  "hosts": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    }
+  ],
+  "guests": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    },
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    },
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    },
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "personal",
+          "url": "https://www.example.com"
+        },
+        {
+          "site": "github",
+          "url": "https://www.example.com"
+        }
+      ]
+    }
+  ]
+}
