@@ -9,14 +9,14 @@
       <v-col cols="12" md="3">
         <div class="d-flex flex-column align-center justify-center fill-height">
           <UserList v-if="hasMultipleHost" :users="episode.hosts" />
-          <UserAvatarWithName v-else-if="host" :user="host" />
+          <UserAvatarWithName v-else-if="host" :user="host" name="Host" />
 
           <div class="my-4 font-weight-bold">
             AND
           </div>
 
           <UserList v-if="hasMultipleGuest" :users="episode.guests" />
-          <UserAvatarWithName v-else-if="guest" :user="guest" />
+          <UserAvatarWithName v-else-if="guest" :user="guest" name="Guest" />
         </div>
       </v-col>
     </v-row>
