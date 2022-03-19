@@ -4,25 +4,22 @@ import { existsSync, mkdirSync, writeFileSync } from 'fs'
 import { Podcast } from 'podcast'
 
 import { getEpisodes } from '../utils/episode'
-import { BASE_URL } from '../utils/constants/app-constants'
+import { BASE_URL, RssFeedConstants } from '../utils/constants/app-constants'
 
 const feedPath = '/podcast.xml'
 
 export default async function () {
   const feed = new Podcast({
-    title: '0x4447 Podcast',
-    description: 'This is my podcast feed!',
+    title: RssFeedConstants.title,
+    description: RssFeedConstants.description,
     feedUrl: `${BASE_URL}${feedPath}`,
     siteUrl: BASE_URL,
-    // imageUrl: `${BASE_URL}/site-icon.png`,
-    imageUrl: 'https://media.rss.com/hello-moss/20220318_060332_57eda3e8c7b478842701a2e72e439c31.jpg',
-    author: 'David Gatti',
+    imageUrl: `${BASE_URL}/podcast.jpg`,
+    author: RssFeedConstants.author,
     language: 'en',
-    ttl: 60,
-    itunesAuthor: 'David Gatti',
-    itunesOwner: { name: 'David Gatti', email: 'office@0x4447.email' },
-    itunesExplicit: true,
-    itunesImage: 'https://media.rss.com/hello-moss/20220318_060332_57eda3e8c7b478842701a2e72e439c31.jpg'
+    itunesOwner: { name: RssFeedConstants.owner.name, email: RssFeedConstants.owner.email },
+    itunesExplicit: false,
+    itunesImage: `${BASE_URL}/podcast.jpg`
   })
 
   const episodes = await getEpisodes()
@@ -33,7 +30,12 @@ export default async function () {
       url: `${BASE_URL}/episodes/${episode.slug}/`,
       guid: episode.slug,
       date: new Date(episode.date)
-      // enclosure: { url: '...', file: 'path-to-file' }, // optional enclosure
+      /*
+      enclosure: {
+        url: '<audio-file-url>',
+        type: 'audio/mpeg'
+      }
+      */
     })
   })
 
@@ -47,7 +49,17 @@ export default async function () {
       mkdirSync(xmlGenerateDirPath, { recursive: true })
     }
     writeFileSync(xmlGeneratePath, xml)
+  })
 
-    console.log('Generated', feedPath)
+  this.addServerMiddleware({
+    path: feedPath,
+    handler (req, res, next) {
+      try {
+        res.setHeader('Content-Type', 'application/rss+xml')
+        res.end(xml)
+      } catch (err) {
+        next(err)
+      }
+    }
   })
 }
