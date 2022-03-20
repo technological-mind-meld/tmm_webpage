@@ -12,6 +12,9 @@
             src="/public/img/logo_light.svg"
             class="logo-header-img"
           >
+          <span class="header-logo__text">
+            a solid foundation
+          </span>
         </NuxtLink>
 
         <div class="header-navbar">
@@ -127,8 +130,11 @@ export default {
   }
 
   .logo-header {
-    width: 130px;
-    min-width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 118px;
+    min-width: 118px;
 
     @media (max-width: 968px) {
       margin: 0 auto;
@@ -137,7 +143,11 @@ export default {
 
   .logo-header-img {
     max-width: 100%;
-    vertical-align: middle;
+  }
+
+  .header-logo__text {
+    font-size: 12px;
+    color: $text-muted;
   }
 
   .header-button__icon {
