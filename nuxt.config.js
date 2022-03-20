@@ -55,6 +55,8 @@ export default {
     }],
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // Podcast RSS Generation Module
+    '~/modules/podcast',
     // Sitemap module configuration (https://sitemap.nuxtjs.org/guide/setup)
     ['@nuxtjs/sitemap', {
       path: '/sitemap.xml',

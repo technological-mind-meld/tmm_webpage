@@ -1,13 +1,13 @@
 import { getEpisodes } from '../utils/episode'
-import { BASE_URL } from '../utils/constants/app-constants'
+import { BASE_URL, RssFeedConstants } from '../utils/constants/app-constants'
 
 export const feed = {
   path: '/feed.xml',
   async create (feed) {
     feed.options = {
-      title: '0x4447 Podcast',
+      title: RssFeedConstants.title,
       link: BASE_URL,
-      description: 'This is my podcast feed!'
+      description: RssFeedConstants.description
     }
 
     const episodes = await getEpisodes()
