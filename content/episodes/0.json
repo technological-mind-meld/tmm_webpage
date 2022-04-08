@@ -1,11 +1,11 @@
 {
   "date": "2022-03-15",
-  "title": "Episode zero - why am I doing this podcast.",
-  "tags": [ "aws", "ceo", "co-founder", "cloud" ],
+  "title": "TMM - Season 0 // Episode 0 - Init.",
+  "tags": [ "aws", "history", "technology", "cloud" ],
   "media": [
     {
       "provider": "youtube",
-      "url": "https://www.youtube.com/watch?v=jI9I3rt4vkM"
+      "url": "https://www.youtube.com/watch?v=hZ-Le_uLqdI"
     }
   ],
   "hosts": [
@@ -30,20 +30,16 @@
   ],
   "guests": [
     {
-      "full_name": "David Gatti",
-      "photo": "/users/david.jpg",
+      "full_name": "Matthew D. Smith",
+      "photo": "/users/matthew.jpg",
       "urls": [
         {
           "site": "linkedin",
-          "url": "https://www.linkedin.com/in/gattidavid/"
+          "url": "https://www.linkedin.com/in/darthfiber/"
         },
         {
-          "site": "twitter",
-          "url": "https://twitter.com/0x4447"
-        },
-        {
-          "site": "github",
-          "url": "https://github.com/davidgatti"
+          "site": "Website",
+          "url": "https://fieldcloud.com/"
         }
       ]
     }
