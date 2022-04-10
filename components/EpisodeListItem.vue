@@ -1,8 +1,8 @@
 <template>
-  <v-card :to="{ name: 'episodes-slug', params: { slug: episode.slug } }" outlined class="episode-card overflow-hidden rounded" color="transparent">
+  <v-card :to="link" outlined class="episode-card overflow-hidden rounded" color="transparent">
     <v-card-text>
       <div class="d-flex align-start">
-        <div class="episode-number d-flex align-center justify-center flex-shrink-0 mr-4 primary--text" v-text="episode.slug" />
+        <div class="episode-number d-flex align-center justify-center flex-shrink-0 mr-4 primary--text" v-text="number" />
         <div class="episode-content">
           <h3 class="text-h5" v-text="episode.title" />
           <p class="meta mb-0">
@@ -35,6 +35,14 @@ export default {
     },
     tags () {
       return this.episode.tags.map(tag => `#${tag}`).join(', ')
+    },
+    number () {
+      const { season = 0, slug } = this.episode
+      return `${season}.${slug}`
+    },
+    link () {
+      const { season = 0, slug } = this.episode
+      return `/season/${season}/episode/${slug}/`
     }
   }
 }

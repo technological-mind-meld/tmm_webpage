@@ -36,7 +36,7 @@
 export default {
   name: 'EpisodeDetailPage',
   async asyncData ({ $content, error, params }) {
-    const episode = await $content('episodes', params.slug).fetch()
+    const episode = await $content(`episodes/${params.sid}`, params.id).fetch()
       .catch(() => null)
 
     if (!episode) {
