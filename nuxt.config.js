@@ -57,6 +57,8 @@ export default {
     '@nuxt/content',
     // Podcast RSS Generation Module
     '~/modules/podcast',
+    // Api Generation Module
+    '~/modules/api-episodes',
     // Sitemap module configuration (https://sitemap.nuxtjs.org/guide/setup)
     ['@nuxtjs/sitemap', {
       path: '/sitemap.xml',
