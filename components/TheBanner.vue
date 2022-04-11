@@ -1,36 +1,30 @@
 <template>
   <v-row>
-    <v-col cols="12" md="7">
+    <v-col cols="12">
       <div class="banner-description">
-        <!-- Main Image -->
-        <v-img src="/users/david.jpg" lazy-src="/users/david.jpg" max-width="45%" contain class="rounded">
-          <template #placeholder>
-            <v-row class="fill-height" align="center" justify="center" no-gutters>
-              <v-progress-circular indeterminate color="grey lighten-5" />
-            </v-row>
-          </template>
-        </v-img>
+        <div class="d-flex justify-center">
+          <!-- David's Image -->
+          <BannerUser name="David Gatti" image="/users/david.jpg" />
+          <!-- Matt's Image -->
+          <BannerUser name="Matthew D. Smith" image="/users/matthew.jpg" />
+        </div>
 
         <!-- Description Text -->
-        <div>
-          <h2 class="pt-5">
+        <div class="mt-6 text-center">
+          <h2 class="mb-4">
             technological-mind-meld
           </h2>
           <p>
-            I’m David and I’ve been doing AWS consulting since 2016. Now I decided that I want to help owners and CEOs to make better decisions regarding technology and the Cloud, especially when it comes to AWS.
+            We are two geeks that have a passion for technology, like to talk about it and share our experience and knowledge with others.
           </p>
           <p>
-            In this podcast I share my experience about the Cloud and AWS. You get to spend two hours with me, where you can ask me any question you might have about AWS and the Cloud in general. In return the chat will be posted publicly for everyone to learn from.
+            Not to mention Matthew has a passion for the history of tech companies. He loves figuring out how they came to be, their journey and how they impacted the industry as a whole.
           </p>
           <p>
-            On the right you can find my calendar, pick a date that works for you.
+            We also have different points of view, which creates interesting debates. Tune in and enjoy the show.
           </p>
         </div>
       </div>
-    </v-col>
-    <v-col cols="12" md="5">
-      <!-- This component loads calendly widget -->
-      <CalendlyWidget />
     </v-col>
   </v-row>
 </template>
@@ -44,8 +38,7 @@ export default {
 <style lang="scss" scoped>
 .banner-description {
   .v-image {
-    float: left;
-    margin: 0 30px 15px 0;
+    margin: 0 15px;
   }
 
   p {

@@ -27,8 +27,8 @@ export default async function () {
   episodes.forEach((episode) => {
     feed.addItem({
       title: episode.title,
-      url: `${BASE_URL}/episodes/${episode.slug}/`,
-      guid: episode.slug,
+      url: `${BASE_URL}/season/${episode.season}/episode/${episode.slug}/`,
+      guid: `${episode.season}.${episode.slug}`,
       date: new Date(episode.date)
       /*
       enclosure: {

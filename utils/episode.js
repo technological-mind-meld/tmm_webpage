@@ -1,12 +1,16 @@
+import { getSeasonFromEpisode } from './helpers'
+
 export const getEpisodeRoutes = async () => {
   const { $content } = require('@nuxt/content')
 
-  const episodes = await $content('episodes').only(['slug']).fetch()
-  return episodes.map(episode => `/episodes/${episode.slug}/`)
+  const episodes = await $content('episodes', { deep: true }).only(['slug', 'dir']).fetch()
+  return episodes.map(episode => `/season/${getSeasonFromEpisode(episode)}/episode/${episode.slug}/`)
 }
 
 export const getEpisodes = async () => {
   const { $content } = require('@nuxt/content')
 
-  return await $content('episodes').sortBy('date', 'desc').only(['title', 'slug', 'date']).fetch()
+  let episodes = await $content('episodes', { deep: true }).sortBy('date', 'desc').fetch()
+  episodes = episodes.map(episode => ({ ...episode, season: getSeasonFromEpisode(episode) }))
+  return episodes
 }

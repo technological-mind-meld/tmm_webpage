@@ -4,7 +4,7 @@
     <template v-else>
       <template v-for="(episode, index) in episodes">
         <EpisodeListItem
-          :key="episode.slug"
+          :key="episode.path"
           :episode="episode"
         />
         <v-divider v-if="index < episodes.length - 1" :key="episodes.length + index + 100" class="my-2" />
