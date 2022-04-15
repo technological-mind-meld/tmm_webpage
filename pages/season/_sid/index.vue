@@ -1,5 +1,7 @@
 <template>
   <div>
+    <SocialHead :title="title" />
+
     <h1>Episodes of Season #{{ season }}</h1>
     <TheEpisodeList :loading="$fetchState.pending" :episodes="episodes" />
   </div>
@@ -24,9 +26,17 @@ export default {
 
     this.episodes = episodes
   },
+  head () {
+    return {
+      title: this.title
+    }
+  },
   computed: {
     season () {
       return this.$route.params.sid
+    },
+    title () {
+      return `Season ${this.season}`
     }
   }
 }
