@@ -11,6 +11,8 @@
             alt="0x4447, LLC."
             src="/public/img/logo_light.svg"
             class="logo-header-img"
+            width="118"
+            height="35"
           >
           <span class="header-logo__text">
             a solid foundation
