@@ -24,8 +24,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/filters',
-    { src: '~/plugins/hotjar', mode: 'client' },
-    { src: '~/plugins/calendly', mode: 'client' }
+    { src: '~/plugins/hotjar', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
