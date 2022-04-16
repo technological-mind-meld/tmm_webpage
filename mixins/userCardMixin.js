@@ -20,7 +20,7 @@ export default {
       return row ? row.url : null
     },
     personalURL () {
-      const row = this.user.urls.find(url => url.site === 'personal')
+      const row = this.user.urls.find(url => url.site === 'personal' || url.site === 'Website')
       return row ? row.url : null
     },
     githubURL () {
