@@ -6,14 +6,7 @@
       <p class="user-card__company mb-0" v-text="companyName" />
     </div>
     <!--Image-->
-    <v-img
-      :src="photoURL"
-      class="rounded"
-      :alt="fullName"
-      :width="imageSize"
-      :max-width="imageSize"
-      :height="imageSize"
-    />
+    <UserAvatar :user="user" :size="imageSize" />
   </div>
 </template>
 
