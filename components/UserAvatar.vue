@@ -12,22 +12,31 @@
     :nudge-left="nudgeLeft"
   >
     <template #activator="{ on, attrs }">
-      <img
+      <nuxt-img
         :src="photoURL"
         :alt="fullName"
-        :width="size"
-        :height="size"
+        :width="200"
+        :height="200"
         :class="{ 'rounded': rounded }"
         class="cursor-pointer"
+        format="webp"
+        :style="{ width: `${size}px`, height: `${size}px` }"
         v-bind="attrs"
         v-on="on"
-      >
+      />
     </template>
     <div>
       <v-list>
         <v-list-item>
           <v-list-item-avatar rounded>
-            <img :src="photoURL" :alt="fullName" class="rounded">
+            <nuxt-img
+              :src="photoURL"
+              :alt="fullName"
+              :width="100"
+              :height="100"
+              class="rounded"
+              format="webp"
+            />
           </v-list-item-avatar>
 
           <v-list-item-content>

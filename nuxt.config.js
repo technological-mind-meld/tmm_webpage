@@ -37,7 +37,9 @@ export default {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    // https://image.nuxtjs.org/getting-started/installation
+    '@nuxt/image'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
