@@ -12,6 +12,7 @@
     {
       "full_name": "David Gatti",
       "photo": "/users/david.jpg",
+      "company": "0x4447, LLC",
       "urls": [
         {
           "site": "linkedin",
@@ -32,6 +33,7 @@
     {
       "full_name": "Matthew D. Smith",
       "photo": "/users/matthew.jpg",
+      "company": "Field Cloud",
       "urls": [
         {
           "site": "linkedin",

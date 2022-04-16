@@ -9,6 +9,9 @@ export default {
     fullName () {
       return this.user.full_name
     },
+    companyName () {
+      return this.user.company
+    },
     photoURL () {
       return this.user.photo
     },
