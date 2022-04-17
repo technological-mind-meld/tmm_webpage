@@ -1,19 +1,12 @@
 <template>
-  <v-img
+  <nuxt-img
     :src="image"
-    :lazy-src="image"
-    width="45%"
-    max-width="262px"
-    contain
-    class="rounded"
     :alt="name"
-  >
-    <template #placeholder>
-      <v-row class="fill-height" align="center" justify="center" no-gutters>
-        <v-progress-circular indeterminate color="grey lighten-5" />
-      </v-row>
-    </template>
-  </v-img>
+    class="rounded banner-user"
+    width="350"
+    height="350"
+    format="webp"
+  />
 </template>
 
 <script>
@@ -31,3 +24,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+img.banner-user {
+  width: 45%;
+  height: auto;
+  max-width: 262px;
+  margin: 0 15px;
+}
+</style>

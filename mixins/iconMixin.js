@@ -1,6 +1,7 @@
 import {
   mdiWeb,
-  mdiMenu
+  mdiMenu,
+  mdiRibbon
 } from '@mdi/js'
 
 export default {
@@ -8,7 +9,8 @@ export default {
     return {
       icons: {
         mdiWeb,
-        mdiMenu
+        mdiMenu,
+        mdiRibbon
       }
     }
   }

@@ -10,6 +10,8 @@
                 class="footer__logo"
                 alt="0x4447, LLC."
                 src="/public/img/logo_light.svg"
+                width="200"
+                height="59"
               >
             </NuxtLink>
 
@@ -30,6 +32,8 @@
                     :src="social.image"
                     class="footer-list__social-icon"
                     :alt="`Share on ${social.name}`"
+                    width="24"
+                    height="24"
                   >
                 </a>
               </li>

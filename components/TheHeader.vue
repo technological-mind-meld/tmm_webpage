@@ -6,14 +6,9 @@
   >
     <v-container class="py-0">
       <div class="header-content">
-        <NuxtLink :to="{ name: 'index' }" class="logo-header">
-          <img
-            alt="0x4447, LLC."
-            src="/public/img/logo_light.svg"
-            class="logo-header-img"
-          >
-          <span class="header-logo__text">
-            a solid foundation
+        <NuxtLink :to="{ name: 'index' }" class="logo-header header-navbar__item ml-0">
+          <span class="header-navbar__item-link">
+            TMM
           </span>
         </NuxtLink>
 
@@ -132,9 +127,9 @@ export default {
   .logo-header {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 118px;
     min-width: 118px;
+    justify-content: center;
 
     @media (max-width: 968px) {
       margin: 0 auto;

@@ -2,39 +2,33 @@
   <div>
     <SocialHead :title="episode.title" type="video.episode" />
 
-    <v-row class="flex-row-reverse">
-      <v-col cols="12" md="9">
-        <VideoEmbed :youtube-id="youtubeId" />
-      </v-col>
-      <v-col cols="12" md="3">
-        <div class="d-flex flex-column align-center justify-center fill-height">
-          <UserList v-if="hasMultipleHost" :users="episode.hosts" />
-          <UserAvatarWithName v-else-if="host" :user="host" name="Host" />
+    <div v-if="host && guest" class="d-flex mb-6">
+      <UserCard :user="host" />
+      <TheRibbonDivider />
+      <UserCard :user="guest" right />
+    </div>
 
-          <div class="my-4 font-weight-bold">
-            AND
-          </div>
+    <div class="mb-6">
+      <VideoEmbed :youtube-id="youtubeId" />
+    </div>
 
-          <UserList v-if="hasMultipleGuest" :users="episode.guests" />
-          <UserAvatarWithName v-else-if="guest" :user="guest" name="Guest" />
-        </div>
-      </v-col>
-    </v-row>
-
-    <v-divider class="my-8" />
-
-    <h1 class="text-h4 font-weight-light mb-4" v-text="episode.title" />
-    <p class="text-subtitle-1">
-      {{ episode.date | date }}
-      -
-      {{ tags }}
-    </p>
+    <div class="mb-6">
+      <h1 class="text-h4 font-weight-light mb-2" v-text="episode.title" />
+      <p class="text-subtitle-1 mb-0">
+        {{ episode.date | date }}
+        -
+        {{ tags }}
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
+import iconMixin from '~/mixins/iconMixin'
+
 export default {
   name: 'EpisodeDetailPage',
+  mixins: [iconMixin],
   async asyncData ({ $content, error, params }) {
     const episode = await $content(`episodes/${params.sid}`, params.id).fetch()
       .catch(() => null)

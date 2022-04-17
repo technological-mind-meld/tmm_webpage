@@ -24,8 +24,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/filters',
-    { src: '~/plugins/hotjar', mode: 'client' },
-    { src: '~/plugins/calendly', mode: 'client' }
+    { src: '~/plugins/hotjar', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -38,7 +37,9 @@ export default {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    // https://image.nuxtjs.org/getting-started/installation
+    '@nuxt/image'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

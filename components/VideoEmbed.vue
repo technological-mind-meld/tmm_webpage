@@ -1,7 +1,7 @@
 <template>
   <div class="iframe__16x9__wrapper">
     <iframe
-      :src="`https://www.youtube-nocookie.com/embed/${youtubeId}`"
+      :src="`https://www.youtube.com/embed/${youtubeId}`"
       width="100%"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
