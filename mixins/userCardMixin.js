@@ -10,7 +10,13 @@ export default {
       return this.user.full_name
     },
     companyName () {
-      return this.user.company
+      return this.user.company.name
+    },
+    companyImage () {
+      return this.user.company.image
+    },
+    hasCompanyImageFiltered () {
+      return this.user.company.imageFilter
     },
     photoURL () {
       return this.user.photo

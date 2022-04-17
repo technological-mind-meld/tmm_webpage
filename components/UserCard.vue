@@ -1,9 +1,15 @@
 <template>
   <div class="user-card-wrapper d-flex align-center justify-end rounded overflow-hidden" :class="wrapperClass">
     <!--Info-->
-    <div class="d-flex flex-column justify-center" :class="textWrapperClass">
+    <div class="d-flex flex-column justify-space-around" :class="textWrapperClass" style="height: 100%;">
       <h3 class="user-card__name" v-text="fullName" />
-      <p class="user-card__company mb-0" v-text="companyName" />
+      <img
+        :src="companyImage"
+        :alt="companyName"
+        :height="companyImageSize"
+        class="user-card__company-image"
+        :class="companyImageClass"
+      >
     </div>
     <!--Image-->
     <nuxt-img
@@ -37,8 +43,14 @@ export default {
     textWrapperClass () {
       return { 'align-end': !this.right }
     },
+    companyImageClass () {
+      return { filtered: this.hasCompanyImageFiltered }
+    },
     imageSize () {
       return this.$vuetify.breakpoint.mdAndUp ? 100 : 50
+    },
+    companyImageSize () {
+      return this.$vuetify.breakpoint.mdAndUp ? 30 : 20
     }
   }
 }
@@ -51,6 +63,13 @@ export default {
 
   .user-card__company {
     color: $text-muted;
+  }
+
+  .user-card__company-image {
+    &.filtered {
+      filter: drop-shadow(0px 0px 1px $text-muted) drop-shadow(0px 0px 1px $text-muted) drop-shadow(0px 0px 1px $text-muted);
+      -webkit-filter: drop-shadow(0px 0px 1px $text-muted) drop-shadow(0px 0px 1px $text-muted) drop-shadow(0px 0px 1px $text-muted);
+    }
   }
 }
 
