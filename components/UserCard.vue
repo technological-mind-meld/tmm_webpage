@@ -6,7 +6,15 @@
       <p class="user-card__company mb-0" v-text="companyName" />
     </div>
     <!--Image-->
-    <UserAvatar :user="user" :size="imageSize" />
+    <nuxt-img
+      :src="photoURL"
+      :alt="fullName"
+      class="rounded"
+      format="webp"
+      :width="imageSize * 2"
+      :height="imageSize * 2"
+      :style="{ width: `${imageSize}px`, height: `${imageSize}px` }"
+    />
   </div>
 </template>
 
