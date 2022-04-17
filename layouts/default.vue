@@ -27,6 +27,17 @@ export default {
         mixpanel.track('Visit')
       }
     }
+  },
+  async mounted () {
+    // If there is an update, refresh the page.
+    const workbox = await window.$workbox
+    if (workbox) {
+      workbox.addEventListener('installed', (event) => {
+        if (event.isUpdate) {
+          window.location.reload()
+        }
+      })
+    }
   }
 }
 </script>
