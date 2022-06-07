@@ -1,0 +1,75 @@
+{
+  "date": "2022-06-07",
+  "title": "Industrial Controls API for modern manufacturing - Season 0, Episode 2.",
+  "tags": [ "iot", "api", "embedded", "industrial controls" ],
+  "media": [
+    {
+      "provider": "youtube",
+      "url": "https://www.youtube.com/watch?v=NUj_DL3RlQw"
+    }
+  ],
+  "hosts": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "company": {
+        "name": "0x4447, LLC",
+        "image": "/public/img/logo_light.svg"
+      },
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.linkedin.com/in/gattidavid/"
+        },
+        {
+          "site": "twitter",
+          "url": "https://twitter.com/0x4447"
+        },
+        {
+          "site": "github",
+          "url": "https://github.com/davidgatti"
+        }
+      ]
+    }
+  ],
+  "guests": [
+    {
+      "full_name": "Matthew D. Smith",
+      "photo": "/users/matthew.jpg",
+      "company": {
+        "name": "Fieldcloud",
+        "image": "/companies/fieldcloud.png",
+        "imageFilter": true
+      },
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.linkedin.com/in/darthfiber/"
+        },
+        {
+          "site": "Website",
+          "url": "https://fieldcloud.com/"
+        }
+      ]
+    },
+    {
+      "full_name": "James Cabe",
+      "photo": "/users/james_cabe.jpg",
+      "company": {
+        "name": "SensabilityIO",
+        "image": "/companies/sensabilityio.jpg",
+        "imageFilter": true
+      },
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.linkedin.com/in/jamescabe/"
+        },
+        {
+          "site": "Website",
+          "url": "https://www.sensabilityio.com/"
+        }
+      ]
+    }
+  ]
+}
