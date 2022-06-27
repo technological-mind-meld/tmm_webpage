@@ -1,0 +1,56 @@
+{
+  "date": "2022-06-16",
+  "title": "What is the state of tech in Africa? - Season 0, Episode 3.",
+  "tags": [ "africa", "discussion", "technology", "culture" ],
+  "media": [
+    {
+      "provider": "youtube",
+      "url": "https://www.youtube.com/watch?v=Hd1xkaF5Af4"
+    }
+  ],
+  "hosts": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "company": {
+        "name": "0x4447, LLC",
+        "image": "/public/img/logo_light.svg"
+      },
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.linkedin.com/in/gattidavid/"
+        },
+        {
+          "site": "twitter",
+          "url": "https://twitter.com/0x4447"
+        },
+        {
+          "site": "github",
+          "url": "https://github.com/davidgatti"
+        }
+      ]
+    }
+  ],
+  "guests": [
+    {
+      "full_name": "Matthew D. Smith",
+      "photo": "/users/matthew.jpg",
+      "company": {
+        "name": "Fieldcloud",
+        "image": "/companies/fieldcloud.png",
+        "imageFilter": true
+      },
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.linkedin.com/in/darthfiber/"
+        },
+        {
+          "site": "Website",
+          "url": "https://fieldcloud.com/"
+        }
+      ]
+    }
+  ]
+}
