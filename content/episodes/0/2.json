@@ -1,11 +1,11 @@
 {
-  "date": "2022-04-08",
-  "title": "Init.",
-  "tags": [ "aws", "history", "technology", "cloud" ],
+  "date": "2022-06-07",
+  "title": "Industrial Controls API for modern manufacturing.",
+  "tags": [ "iot", "api", "embedded", "industrial controls" ],
   "media": [
     {
       "provider": "youtube",
-      "url": "https://www.youtube.com/watch?v=We6yZdCaMYs"
+      "url": "https://www.youtube.com/watch?v=NUj_DL3RlQw"
     }
   ],
   "hosts": [
@@ -49,6 +49,25 @@
         {
           "site": "Website",
           "url": "https://fieldcloud.com/"
+        }
+      ]
+    },
+    {
+      "full_name": "James Cabe",
+      "photo": "/users/james_cabe.jpg",
+      "company": {
+        "name": "SensabilityIO",
+        "image": "/companies/sensabilityio.jpg",
+        "imageFilter": true
+      },
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.linkedin.com/in/jamescabe/"
+        },
+        {
+          "site": "Website",
+          "url": "https://www.sensabilityio.com/"
         }
       ]
     }
