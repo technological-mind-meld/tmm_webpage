@@ -1,0 +1,56 @@
+{
+  "date": "2022-08-05",
+  "title": "Crazy IoT white wedding stories. It's a nice day to start again",
+  "tags": [ "companies", "acquisition", "market" ],
+  "media": [
+    {
+      "provider": "youtube",
+      "url": "https://www.youtube.com/watch?v=7p3IejvH5oA"
+    }
+  ],
+  "hosts": [
+    {
+      "full_name": "David Gatti",
+      "photo": "/users/david.jpg",
+      "company": {
+        "name": "0x4447, LLC",
+        "image": "/public/img/logo_light.svg"
+      },
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.linkedin.com/in/gattidavid/"
+        },
+        {
+          "site": "twitter",
+          "url": "https://twitter.com/0x4447"
+        },
+        {
+          "site": "github",
+          "url": "https://github.com/davidgatti"
+        }
+      ]
+    }
+  ],
+  "guests": [
+    {
+      "full_name": "Matthew D. Smith",
+      "photo": "/users/matthew.jpg",
+      "company": {
+        "name": "Fieldcloud",
+        "image": "/companies/fieldcloud.png",
+        "imageFilter": true
+      },
+      "urls": [
+        {
+          "site": "linkedin",
+          "url": "https://www.linkedin.com/in/darthfiber/"
+        },
+        {
+          "site": "Website",
+          "url": "https://fieldcloud.com/"
+        }
+      ]
+    }
+  ]
+}
